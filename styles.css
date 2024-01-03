@@ -11,7 +11,7 @@ body{
     bottom: 0;
     right: 0;
     margin: auto;
-    background: linear-gradient(#5e5e5e 85%, #45454f 100%);
+    background: radial-gradient(#5e5e5e , #45454f);
     width: 205px;
     height: 180px;
     border: 1px solid #000;
@@ -19,7 +19,7 @@ body{
 }
 .left-ear{
     position: absolute;
-    top: -22px;
+    top: -29px;
     left: calc(0% - 22px);
     transform: rotate(-45deg);
     border-top-right-radius: 10px;
@@ -27,11 +27,11 @@ body{
     border-left: 35px solid transparent;
     border-right: 35px solid transparent;
     border-bottom: 70px solid #5e5e5e;
-    z-index: 1;
+    z-index: -1;
 }
 .right-ear{
     position: absolute;
-    top: -22px;
+    top: -29px;
     left: calc(100% - 45px);
     transform: rotate(45deg);
     border-left: 35px solid transparent;
@@ -39,7 +39,7 @@ body{
     border-bottom: 70px solid #5e5e5e;
     border-top-left-radius: 90px;
     border-top-right-radius: 10px;
-    z-index: 1;
+    z-index: -1;
 }
 .left-inner-ear{
     position: absolute;
@@ -171,7 +171,13 @@ body{
 }
 .mouth-line-left{
     position: absolute;
-    top: 70px;
-    left: 44%;
+    top: calc(55% - 20px);
+    left: calc(42% - 10px);
     transform: rotate(170deg);
+}
+.mouth-line-right{
+    position: absolute;
+    top: calc(55% - 20px);
+    left: calc(42% + 7px);
+    transform: rotate(165deg);
 }
